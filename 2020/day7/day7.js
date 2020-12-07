@@ -2,14 +2,14 @@ const helper = require("../helper");
 const input1 = helper.getInput("day7", "day7part1");
 const input2 = helper.getInput("day7", "day7part2");
 
-function dfs(graph, node, target, visited) {
+function dfs(graph, node, target) {
     if (node === target) {
         return true;
     }
 
     for (let nei of graph[node]) {
         if (nei === "no other bag") continue;
-        if (dfs(graph, nei, target, visited)) {
+        if (dfs(graph, nei, target)) {
             return true;
         }
     }

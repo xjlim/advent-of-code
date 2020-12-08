@@ -46,14 +46,13 @@ function run(input) {
 }
 
 function day8Part2(input) {
-    const jumps = input
-        .map((x, i) => (x.startsWith("jmp") ? { idx: i } : undefined))
-        .filter(Boolean);
-    // try all jmp
-    for (let { idx } of jumps) {
-        let test = input.slice(0);
-        test.splice(idx, 1, "nop -1");
-        const [status, val] = run(test);
+    // try changing all jmps to nop
+    for (let i = 0; i < input.length; i++) {
+        if (!input[i].startsWith("jmp")) continue;
+
+        let newInput = input.slice();
+        newInput[i] = "nop -1";
+        const [status, val] = run(newInput);
         if (status) {
             return val;
         }

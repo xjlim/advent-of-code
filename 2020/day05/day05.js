@@ -1,6 +1,6 @@
 const helper = require("../helper");
-const input1 = helper.getInput("day5", "day5part1");
-const input2 = helper.getInput("day5", "day5part2");
+const input1 = helper.getInput("day05", "day05part1");
+const input2 = helper.getInput("day05", "day05part2");
 
 function binarySearch(arr, lo, hi, up, down) {
     for (let move of arr) {
@@ -14,7 +14,7 @@ function binarySearch(arr, lo, hi, up, down) {
     return lo;
 }
 
-function day5Part1(input) {
+function day05Part1(input) {
     let res = [];
     for (let encodedStr of input) {
         const rows = encodedStr.slice(0, -3);
@@ -27,7 +27,7 @@ function day5Part1(input) {
     return Math.max(...res);
 }
 
-function day5Part2(input) {
+function day05Part2(input) {
     let res = [];
     for (let encodedStr of input) {
         const rows = encodedStr.slice(0, -3);
@@ -49,5 +49,5 @@ function day5Part2(input) {
     }
 }
 
-console.log(day5Part1(input1));
-console.log(day5Part2(input2));
+console.log(day05Part1(input1));
+console.log(day05Part2(input2));

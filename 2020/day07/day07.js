@@ -1,6 +1,6 @@
 const helper = require("../helper");
-const input1 = helper.getInput("day7", "day7part1");
-const input2 = helper.getInput("day7", "day7part2");
+const input1 = helper.getInput("day07", "day07part1");
+const input2 = helper.getInput("day07", "day07part2");
 
 function dfs(graph, node, target) {
     if (node === target) {
@@ -16,7 +16,7 @@ function dfs(graph, node, target) {
     return false;
 }
 
-function day7Part1(input) {
+function day07Part1(input) {
     const target = "shiny gold bag";
     let graph = {};
     for (let str of input) {
@@ -49,7 +49,7 @@ function dfs2(graph, node, total) {
     return sum;
 }
 
-function day7Part2(input) {
+function day07Part2(input) {
     const start = "shiny gold bag";
     let graph = {};
     for (let str of input) {
@@ -73,5 +73,5 @@ function day7Part2(input) {
     return dfs2(graph, start, 1) - 1; // root is not counted
 }
 
-console.log(day7Part1(input1));
-console.log(day7Part2(input2));
+console.log(day07Part1(input1));
+console.log(day07Part2(input2));

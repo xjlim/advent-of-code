@@ -1,8 +1,8 @@
 const helper = require("../helper");
-const input1 = helper.getInput("day6", "day6part1");
-const input2 = helper.getInput("day6", "day6part2");
+const input1 = helper.getInput("day06", "day06part1");
+const input2 = helper.getInput("day06", "day06part2");
 
-function day6Part1(input) {
+function day06Part1(input) {
     let total = 0;
     let i = 0;
     while (i < input.length) {
@@ -17,7 +17,7 @@ function day6Part1(input) {
     return total;
 }
 
-function day6Part2(input) {
+function day06Part2(input) {
     let total = 0;
     let i = 0;
     while (i < input.length) {
@@ -40,5 +40,5 @@ function day6Part2(input) {
     return total;
 }
 
-console.log(day6Part1(input1));
-console.log(day6Part2(input2));
+console.log(day06Part1(input1));
+console.log(day06Part2(input2));

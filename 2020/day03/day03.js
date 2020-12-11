@@ -1,8 +1,8 @@
 const helper = require("../helper");
-const input1 = helper.getInput("day3", "day3part1");
-const input2 = helper.getInput("day3", "day3part2");
+const input1 = helper.getInput("day03", "day03part1");
+const input2 = helper.getInput("day03", "day03part2");
 
-function day3Part1(input) {
+function day03Part1(input) {
     let total = 0;
     let row = 1;
     let col = 3;
@@ -17,7 +17,7 @@ function day3Part1(input) {
     return total;
 }
 
-function day3Part2(input) {
+function day03Part2(input) {
     let row = 1;
     let slopes = [1, 3, 5, 7, 1];
     let cols = [1, 3, 5, 7, 1];
@@ -39,5 +39,5 @@ function day3Part2(input) {
     return slopesTotal.reduce((a, b) => a * b);
 }
 
-console.log(day3Part1(input1));
-console.log(day3Part2(input2));
+console.log(day03Part1(input1));
+console.log(day03Part2(input2));

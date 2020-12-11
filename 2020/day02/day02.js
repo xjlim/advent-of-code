@@ -1,8 +1,8 @@
 const helper = require("../helper");
-const input1 = helper.getInput("day2", "day2part1");
-const input2 = helper.getInput("day2", "day2part2");
+const input1 = helper.getInput("day02", "day02part1");
+const input2 = helper.getInput("day02", "day02part2");
 
-function day2Part1(input) {
+function day02Part1(input) {
     let total = 0;
     for (let encodedStr of input) {
         const [policy, char, password] = encodedStr.split(" ");
@@ -16,7 +16,7 @@ function day2Part1(input) {
     return total;
 }
 
-function day2Part2(input) {
+function day02Part2(input) {
     let total = 0;
     for (let encodedStr of input) {
         const [policy, char, password] = encodedStr.split(" ");
@@ -31,5 +31,5 @@ function day2Part2(input) {
     return total;
 }
 
-console.log(day2Part1(input1));
-console.log(day2Part2(input2));
+console.log(day02Part1(input1));
+console.log(day02Part2(input2));

@@ -1,8 +1,8 @@
 const helper = require("../helper");
-const input1 = helper.getInput("day8", "day8part1");
-const input2 = helper.getInput("day8", "day8part2");
+const input1 = helper.getInput("day08", "day08part1");
+const input2 = helper.getInput("day08", "day08part2");
 
-function day8Part1(input) {
+function day08Part1(input) {
     let i = 0;
     let seen = new Set();
     let val = 0;
@@ -45,7 +45,7 @@ function run(input) {
     return [true, val];
 }
 
-function day8Part2(input) {
+function day08Part2(input) {
     // try changing all jmps to nop
     for (let i = 0; i < input.length; i++) {
         if (!input[i].startsWith("jmp")) continue;
@@ -59,5 +59,5 @@ function day8Part2(input) {
     }
 }
 
-console.log(day8Part1(input1));
-console.log(day8Part2(input2));
+console.log(day08Part1(input1));
+console.log(day08Part2(input2));

@@ -1,6 +1,6 @@
 const helper = require("../helper");
-const input1 = helper.getInput("day9", "day9part1");
-const input2 = helper.getInput("day9", "day9part2");
+const input1 = helper.getInput("day09", "day09part1");
+const input2 = helper.getInput("day09", "day09part2");
 
 function twoSum(nums, target) {
     const pair = {};
@@ -13,7 +13,7 @@ function twoSum(nums, target) {
     return false;
 }
 
-function day9Part1(input) {
+function day09Part1(input) {
     const parsedInput = input.map(Number);
     const SIZE = 25;
     let nums = [];
@@ -30,8 +30,8 @@ function day9Part1(input) {
     }
 }
 
-function day9Part2(input) {
-    const invalid = day9Part1(input);
+function day09Part2(input) {
+    const invalid = day09Part1(input);
     const parsedInput = input.map(Number);
     let start = 0;
     let windowSum = 0;
@@ -49,5 +49,5 @@ function day9Part2(input) {
     }
 }
 
-console.log(day9Part1(input1));
-console.log(day9Part2(input2));
+console.log(day09Part1(input1));
+console.log(day09Part2(input2));

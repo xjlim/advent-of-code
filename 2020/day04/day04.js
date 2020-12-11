@@ -1,8 +1,8 @@
 const helper = require("../helper");
-const input1 = helper.getInput("day4", "day4part1");
-const input2 = helper.getInput("day4", "day4part2");
+const input1 = helper.getInput("day04", "day04part1");
+const input2 = helper.getInput("day04", "day04part2");
 
-function day4Part1(input) {
+function day04Part1(input) {
     const required = new Set(["byr", "iyr", "eyr", "hgt", "hcl", "ecl", "pid"]);
     let total = 0;
     let i = 0;
@@ -22,7 +22,7 @@ function day4Part1(input) {
     return total;
 }
 
-function day4Part2(input) {
+function day04Part2(input) {
     const required = new Set(["byr", "iyr", "eyr", "hgt", "hcl", "ecl", "pid"]);
     const isValid = (field) => {
         const [name, value] = field.split(":");
@@ -72,5 +72,5 @@ function day4Part2(input) {
     return total;
 }
 
-console.log(day4Part1(input1));
-console.log(day4Part2(input2));
+console.log(day04Part1(input1));
+console.log(day04Part2(input2));

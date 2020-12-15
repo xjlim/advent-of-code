@@ -60,7 +60,7 @@ function day15Part2(input) {
         const curr = parsedInput[i - 1];
         insert(last, curr, i);
     }
-    
+
     prev = parsedInput[parsedInput.length - 1];
     while (i <= 30000000) {
         if (last[prev].second === undefined) {
